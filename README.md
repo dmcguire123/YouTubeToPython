@@ -6,9 +6,9 @@ search within Spotify for the artist and title, and then finally add this
 YouTube playlist to a custom made Spotify playlist.
 
 Example of working code:
-![picture](ScreenShots/Screen1.png)
-![picture](ScreenShots/Screen2.png)
-![picture](ScreenShots/Screen3.png)
+![picture](ScreenShots/Screen1.PNG)
+![picture](ScreenShots/Screen2.PNG)
+![picture](ScreenShots/Screen3.PNG)
 
 ERRORS AND NOTES
 -Was receiving an Error 403 regarding the spotify api for the longest time.
