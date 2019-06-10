@@ -108,7 +108,7 @@ def search_spotify(spotify_client, titles_list):
 
     for title in titles_list:
         print(f'\nSearching Track: {title}')
-        with open('search.csv', mode='a') as searched_file:
+        with open('search.csv', mode='a', encoding='utf-8') as searched_file:
             searched_writer = csv.writer(searched_file)
             searched_writer.writerow([title])
         result = spotify_client.search(
@@ -184,7 +184,7 @@ def get_tracks_youtube(youtube):
             print(f'{item[0]}, Total: {len(titles)}: {titles}\n')
     total_titles = titles_un + titles_id
 
-    with open('search.csv') as searched:
+    with open('search.csv', encoding='utf-8') as searched:
         searched_reader = csv.reader(searched, delimiter=',')
         for line in searched_reader:
             SEARCHED_TITLES_LIST.append(line[0])
