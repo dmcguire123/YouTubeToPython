@@ -5,6 +5,7 @@ import csv
 import spotipy
 import spotipy.util as util
 import sys
+import io
 
 # Max number of titles to get from each channel
 MAX_RESULT = 30
