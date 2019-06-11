@@ -14,7 +14,7 @@ MAX_RESULT = 30
 SPOTIFY_USERNAME = 'aljiadct4y4ikpszxg9is314q'
 CLIENT_ID = '7d26e4efb2ca4af0bdb111be87f7b0c3'
 CLIENT_SECRET = '3d4d66b9c20d462dbd79f1a0c83b2c8c'
-Scope = 'playlist-modify-private'
+Scope = 'playlist-modify-private' #This line of code means that the only a private spotify playlist can be added to
 
 # Private Spotify Playlist which will get the new tracks
 YOUTUBE_PLAYLIST_ID = 'spotify:playlist:4Aa78fqo7uvtDbXveHREVu'
@@ -108,7 +108,7 @@ def search_spotify(spotify_client, titles_list):
 
     for title in titles_list:
         print(f'\nSearching Track: {title}')
-        with open('search.csv', mode='a', encoding='utf-8') as searched_file:
+        with open('search.csv', mode='a', encoding='utf-8') as searched_file:  #encoding='utf-8 added to resolve an error
             searched_writer = csv.writer(searched_file)
             searched_writer.writerow([title])
         result = spotify_client.search(
